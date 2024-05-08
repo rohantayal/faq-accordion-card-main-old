@@ -8,54 +8,76 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | FAQ Accordion Card</title>
+  <link rel="stylesheet" href="./css/index.css">
 
 </head>
 
 <body>
-  <header>
-    <img src="./images/illustration-woman-online-mobile.svg" alt="Header image">
-  </header>
+  <section id="card-container">
+    <header>
+      <img src="./images/illustration-woman-online-mobile.svg" alt="Header image" id="woman-img">
+      <img src="./images/bg-pattern-mobile.svg" alt="shadow" id="shadow-img">
+    </header>
 
-  <main>
-    <h1>FAQ</h1>
+    <main>
+      <h1>FAQ</h1>
 
-    <section>
-      <h2>How many team members can I invite?</h2>
+      <section class="faq">
+        <section class="question">
+          <h2>How many team members can I invite?</h2>
+          <img src="./images/icon-arrow-down.svg" alt="Expand">
+        </section>
 
-      <p>You can invite up to 2 additional users on the Free plan. There is no limit on
-        team members for the Premium plan.</p>
-    </section>
+        <p class="answer">You can invite up to 2 additional users on the Free plan. There is no limit on
+          team members for the Premium plan.</p>
+      </section>
 
-    <section>
-      <h2>What is the maximum file upload size?</h2>
+      <section  class="faq">
+        <section class="question">
+          <h2>What is the maximum file upload size?</h2>
+          <img src="./images/icon-arrow-down.svg" alt="Expand">
+        </section>
 
-      <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
-    </section>
+        <p class="answer">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+      </section>
 
-    <section>
-      <h2>How do I reset my password?</h2>
+      <section class="faq">
+        <section class="question">
+          <h2>How do I reset my password?</h2>
+          <img src="./images/icon-arrow-down.svg" alt="Expand">
+        </section>
 
-      <p>
-        Click “Forgot password” from the login page or “Change password” from your profile page.
-        A reset link will be emailed to you.
-      </p>
-    </section>
+        <p class="answer">
+          Click “Forgot password” from the login page or “Change password” from your profile page.
+          A reset link will be emailed to you.
+        </p>
+      </section>
 
-    <section>
-      <h2>Can I cancel my subscription?</h2>
+      <section class="faq">
+        <section class="question">
+          <h2>Can I cancel my subscription?</h2>
+          <img src="./images/icon-arrow-down.svg" alt="Expand">
+        </section>
 
-      <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
-    </section>
+        <p class="answer">Yes! Send us a message and we’ll process your request no questions asked.</p>
+      </section>
 
-    <section>
-      <h2>Do you provide additional support?</h2>
+      <section class="faq">
+        <section class="question">
+          <h2>Do you provide additional support?</h2>
+          <img src="./images/icon-arrow-down.svg" alt="Expand">
+        </section>
 
-      <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
-    </section>
+        <p class="answer">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+      </section>
 
-  </main>
-
+    </main>
+  </section>
 
 
 
