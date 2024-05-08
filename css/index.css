@@ -81,12 +81,19 @@ section.faq{
 .question h2{
     font-size: 1rem;
     align-self: center;
+    color: var(--pri-text-very-dark-desaturated-blue);
 }
 
 section.faq:hover{
     cursor: pointer;
     color: var(--pri-text-soft-red);
 }
+
+section.question h2:hover{
+    cursor: pointer;
+    color: var(--pri-text-soft-red);
+}
+
 
 .question img{
     margin: 0 .5rem 0 0;
@@ -99,3 +106,17 @@ section.faq:hover{
     overflow: hidden;
     margin: 0;
 }
+
+p.active{
+    max-height: fit-content;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    color: var(--neu-text-dark-grayish-blue);
+}
+
+img.rotate{
+    transform: rotate(180deg);
+}
+
+
+
