@@ -1,181 +1,98 @@
-:root {
+<!DOCTYPE html>
+<html lang="en">
 
-  --pri-text-very-dark-desaturated-blue: hsl(238, 29%, 16%);
-  --pri-text-soft-red: hsl(14, 88%, 65%);
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
-  --background-grad-soft-violet: hsl(273, 75%, 66%);
-  --background-grad-soft-blue: hsl(240, 73%, 65%);
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  --neu-text-very-dark-grayish-blue: hsl(237, 12%, 33%);
-  --neu-text-dark-grayish-blue: hsl(240, 6%, 50%);
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
 
-  --dividers-light-grayish-blue: hsl(240, 5%, 91%);
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="./js/main.js"></script>
+</head>
 
-  font-size: 12px;
+<body>
+  <section id="card-container">
+    <header class="wrapper">
+      <section class="hidden-header">
+        <img src="./images/illustration-woman-online-mobile.svg" alt="Header image" id="woman-img">
+        <div id="box-desktop"></div>
+      </section>
+    </header>
 
-  font-family: "Kumbh Sans", Arial, Helvetica, sans-serif;
-}
+    <main>
+      <h1>FAQ</h1>
 
-body {
-  min-height: 100vh;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 2rem 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(to bottom, var(--background-grad-soft-violet) 0%, var(--background-grad-soft-blue) 100%);
+      <section class="faq">
+        <section class="question">
+          <h2>How many team members can I invite?</h2>
+          <img src="./images/icon-arrow-down.svg" alt="Collapse" class="arrow">
+        </section>
 
-}
+        <p class="answer">You can invite up to 2 additional users on the Free plan. There is no limit on
+          team members for the Premium plan.</p>
+      </section>
 
-#card-container {
-  width: 86%;
-  margin: 40% 0;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 120px 3fr;
-  justify-content: center;
-  align-items: center;
-  background: white;
-  text-align: center;
-  padding: 0 0 5rem 0;
-  border-radius: 21px;
-  ;
-}
+      <section class="faq">
+        <section class="question">
+          <h2>What is the maximum file upload size?</h2>
+          <img src="./images/icon-arrow-down.svg" alt="Expand" class="arrow rotate">
+        </section>
 
-.hidden-header {
-  margin: 0 auto;
-  background-image: url(../images/bg-pattern-mobile.svg);
-  background-position: bottom 48px right 28px;
-  background-repeat: no-repeat;
-  background-size: 80%;
-}
+        <p class="answer active">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+      </section>
 
-.hidden-header #woman-img {
-  width: 80%;
-  height: auto;
-  position: relative;
-  bottom: 74px;
-}
+      <section class="faq">
+        <section class="question">
+          <h2>How do I reset my password?</h2>
+          <img src="./images/icon-arrow-down.svg" alt="Collapse" class="arrow">
+        </section>
 
-.hidden-header #shadow-img {
-  width: 80%;
-  height: auto;
-  position: relative;
-  bottom: 109px;
-}
+        <p class="answer">
+          Click “Forgot password” from the login page or “Change password” from your profile page.
+          A reset link will be emailed to you.
+        </p>
+      </section>
 
-main h1 {
-  font-size: 33px;
-}
+      <section class="faq">
+        <section class="question">
+          <h2>Can I cancel my subscription?</h2>
+          <img src="./images/icon-arrow-down.svg" alt="Collapse" class="arrow">
+        </section>
 
-section.faq {
-  margin: 0 1.5rem;
-  border-bottom: 2px solid var(--dividers-light-grayish-blue);
+        <p class="answer">Yes! Send us a message and we’ll process your request no questions asked.</p>
+      </section>
 
-}
+      <section class="faq">
+        <section class="question">
+          <h2>Do you provide additional support?</h2>
+          <img src="./images/icon-arrow-down.svg" alt="Collapse" class="arrow">
+        </section>
 
-.question {
-  display: flex;
-  margin: 1rem 0;
-  justify-content: space-between;
-}
+        <p class="answer">Chat and email support is available 24/7. Phone lines are open during normal business hours.
+        </p>
+      </section>
 
-.question h2 {
-  font-size: 1rem;
-  align-self: center;
-  color: var(--pri-text-very-dark-desaturated-blue);
-}
-
-section.faq:hover {
-  cursor: pointer;
-  color: var(--pri-text-soft-red);
-}
-
-section.question h2:hover {
-  cursor: pointer;
-  color: var(--pri-text-soft-red);
-}
+    </main>
+  </section>
 
 
-.question img {
-  margin: 0 .5rem 0 0;
-  height: 50%;
-  align-self: center;
-}
 
-.answer {
-  max-height: 0;
-  overflow: hidden;
-  margin: 0;
-}
 
-p.active {
-  max-height: fit-content;
-  text-align: left;
-  margin-bottom: 1.5rem;
-  color: var(--neu-text-dark-grayish-blue);
-}
 
-img.rotate {
-  transform: rotate(180deg);
-}
 
-@media (min-width: 720px) {
 
-  body{
-      max-height: 100vh;
-      
-  }
 
-  #card-container {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-      max-width: 820px;
-      margin: 20% 0;
-      padding: 0;
-  }
 
-  header.wrapper{
-      position: relative;
-      width: 100%;
-      height: 100%;
 
-  }
 
-  .hidden-header{
-      background-image: url(../images/bg-pattern-desktop.svg);
-      background-position: bottom -99px right 25px;
-      background-repeat: no-repeat;
-      background-size: 250%;
-      overflow: hidden;
-      width: 100%;
-      height: 100%;
-      padding: 0 0 5rem 0;
-  }
 
-  .hidden-header #woman-img{
-      content: url(../images/illustration-woman-online-desktop.svg);
-      width: 115%;
-      top: 95px;
-      right: 86px;
-  }
+</body>
 
-  #box-desktop{
-      content: url(../images/illustration-box-desktop.svg);
-      position: absolute;
-      z-index: 2;
-      bottom: 112px;
-      left: -93px;
-  }
-
-  main{
-      margin: 2rem 4rem 0 0;
-      padding: 0 0 5rem 0;
-  }
-
-  main h1{
-      text-align: left;
-      margin-left: 1.5rem;
-  }
-}
+</html>
