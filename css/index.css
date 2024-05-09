@@ -78,7 +78,7 @@ section.faq {
 
 .question {
     display: flex;
-    margin: 1rem 0;
+    margin: .5rem 0;
     justify-content: space-between;
 }
 
@@ -114,7 +114,7 @@ section.question h2:hover {
 p.active {
     max-height: fit-content;
     text-align: left;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
     color: var(--neu-text-dark-grayish-blue);
 }
 
