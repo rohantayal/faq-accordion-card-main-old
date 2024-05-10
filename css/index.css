@@ -70,7 +70,7 @@ main h1 {
     font-size: 33px;
 }
 
-section.faq {
+article.faq {
     margin: 0 1.5rem;
     border-bottom: 2px solid var(--dividers-light-grayish-blue);
 
@@ -89,7 +89,7 @@ section.faq {
     transition: all 200ms ease-in;
 }
 
-section.faq:hover {
+article.faq:hover {
     cursor: pointer;
     color: var(--pri-text-soft-red);
 }
@@ -99,14 +99,14 @@ section.faq:hover {
     color: var(--pri-text-soft-red);
 }
 
-section p {
+article p {
     height: 0;
     overflow: hidden;
     margin: 0;
     transition: height .6s ease-out;
 }
 
-section p.active {
+article p.active {
     height: 35px;
     text-align: left;
     margin-bottom: 1.2rem;
