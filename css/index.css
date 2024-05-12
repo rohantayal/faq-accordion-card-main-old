@@ -143,7 +143,7 @@ article p.active {
         height: 520px;
     }
 
-    header.wrapper{
+    div.wrapper{
         position: relative;
         width: 100%;
         height: 100%;
